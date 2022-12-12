@@ -17,6 +17,6 @@ export default {
 #app {
   height: 100vh;
   width: 100vw;
-  /* background-image: url(assets/logo.png); */
+  background-image: url(assets/sea.png);
 }
 </style>

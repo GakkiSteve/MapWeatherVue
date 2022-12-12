@@ -1,12 +1,13 @@
 <template>
   <div id="search_container">
-    <input
+    <el-input
       type="text"
       placeholder="请输入"
       :id="inputObject.inputId"
       v-model="inputObject.userInput"
     />
-    <button id="searchBtn" @click="send">search</button>
+    <!-- <button id="searchBtn" @click="send">search</button> -->
+    <el-button type="primary" id="searchBtn" @click="send">search</el-button>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
   methods: {
     send() {
       bus.$emit("shareUserInput", this.inputObject);
+      // console.log(this.inputObject);
     },
   },
   mounted() {
@@ -35,17 +37,18 @@ export default {
 
 <style lang="less" scoped>
 #search_container {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 350px;
+  top: 20%;
   display: flex;
-
+  position: absolute;
   input {
     height: 30px;
-    width: 500px;
+    width: 300px;
   }
   #searchBtn {
     height: 36px;
-    width: 120px;
+    width: 140px;
   }
 }
 </style>

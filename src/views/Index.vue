@@ -25,7 +25,7 @@ export default {
   #map_wrap {
     height: 60%;
     width: 60%;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -36,7 +36,7 @@ export default {
     left: 40%;
     height: 60px;
     width: 200px;
-    background-color: aliceblue;
+    // background-color: aliceblue;
   }
 }
 </style>
